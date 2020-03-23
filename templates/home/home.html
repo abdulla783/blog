@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block css %}
+     <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+    </style>
+{% endblock css %}
+{% block title %}Home{% endblock title %}
+
+{% block homeactive %}active{% endblock homeactive %}
+{% block body %}
+ <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+     <main class="text-center" role="main" class="inner cover">
+    <h1 class="cover-heading">Welcome to SaimFollow</h1>
+    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+    <p class="lead">
+      <a href="/blog" class="btn btn-lg btn-primary">Go to Blog</a>
+    </p>
+  </main>
+   <div class="container my-3">
+  <h3><u>Popular Blog-Post:</u></h3>
+   
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative my-3">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">Featured post</h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+         <div>
+          <a href="/blog/blogpost" role='button'class="btn btn-primary">Continue reading</a>
+          </div>
+        </div>
+      </div>
+   </div>
+</div>
+{% endblock body %}
